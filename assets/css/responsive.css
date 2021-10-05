@@ -1,0 +1,56 @@
+            @media (max-width:768px) {
+                .personal-conatiner {
+                    max-width: 1200px;
+                }
+            }
+            
+            @media (max-width:455px) {
+                .personal-conatiner {
+                    max-width: 1200px;
+                }
+                .photo-row .photo-left-margin {
+                    margin-left: 58px;
+                    margin-bottom: 10px;
+                }
+                .organation-row .organation-left-margin-round {
+                    margin-right: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+            
+            @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+                .name-row .name-left-marging {
+                    margin-left: 64px;
+                }
+                .birdt-row .bart-date {
+                    margin-left: 33px;
+                }
+                .gender-row .gender {
+                    margin-left: 48px;
+                }
+                .email {
+                    margin-left: 46px;
+                }
+                .phone {
+                    margin-left: 41px;
+                }
+                .orgainiztion-xsize {
+                    flex-direction: column;
+                }
+                .orgainiztion-xsize-margin {
+                    margin-left: -15px !important;
+                }
+                .email-row .email {
+                    margin-left: 55px;
+                }
+                .phone-row .phone {
+                    margin-left: 47px;
+                }
+                .left-logo-area-box {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .right-logo-area {
+                    text-align: center !important;
+                }
+            }

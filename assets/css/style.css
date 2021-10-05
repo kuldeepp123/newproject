@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.light-blue {
+    background-color: #1c3d83;
+}
+
+.white-btn {
+    border: 1px solid #dadce0;
+    color: #000 !important;
+    font-weight: 500 !important;
+}
+
+.navy-blue {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.white-btn img {
+    height: 20px;
+    margin-right: 13px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+/*===============================login-and-register-form================*/
+
+#login-and-register-form {
+    background-color: #D6EAF8;
+    height: 100%;
+}
+
+.lg-nd-rer-form {
+    width: 550px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lg-nd-rer-form .lg-nd-rer-form-btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lg-nd-rer-btn {
+    width: 50%;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 26px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.lg-nd-rer-form-btn-box .active {
+    background-color: #f8f8f8;
+    border: 1px solid #dadce0;
+}
+
+.login-and-register-heading {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.login-and-register-heading h1 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 600;
+}
+
+.login-and-register-heading p {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+/*===================LOGIN=FORM=============*/
+
+.form-form {
+    padding: 0 30px;
+}
+
+.form-element-all .input-field {
+    width: 100%;
+    padding: 8px 0;
+    padding-left: 10px;
+    border: 1px solid #dadce0;
+}
+
+.social-icon {
+    right: 15px;
+    top: 7px;
+    border-left: 1px solid #dadce0;
+    color: #dadce0;
+}
+
+.social-icon i {
+    margin-left: 10px;
+}
+
+.form-element-all .btn {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.divider p {
+    color: #5b5b5b;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+
+/*===============================login-and-register-form=end===============*/
+
+
+/* ================================my-account=================================*/
+
+.my-account {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.my-account-top-logo {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.my-account-top-logo .user-round {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.my-account-top-logo .brand {
+    height: 20px;
+}
+
+.my-account .section-head-round {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-account .section-head-round h1 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.account-det {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.round-head {
+    background-color: darkslateblue;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 60px;
+}
+
+.round-head h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.section-heading h2 {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.25rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #202124;
+    text-align: center;
+}
+
+.section-heading p {
+    letter-spacing: .00625em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #5f6368;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.row-account {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.div-left,
+.div-right {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.content-box h2 {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #202124;
+}
+
+.content-box p {
+    box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #5f6368;
+    margin: 0;
+    padding: 8px 0 0 0px;
+}
+
+.magae {
+    border: 1px solid #dadce0;
+}
+
+.magae h2 {
+    letter-spacing: .01785714em;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #1a73e8;
+    padding: 12px 10px;
+}
+
+
+/* =====================looking-box======================*/
+
+.looking-box {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px 23px;
+}
+
+.subtitle h2 {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #202124;
+}
+
+.looking-box-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadce0;
+    padding: 10px;
+}
+
+.looking-box-row .looking-box-left a i {
+    margin-right: 15px;
+}
+
+.looking-box-row .looking-box-left a img {
+    margin-right: 15px;
+}
+
+.looking-box-row .looking-box-left a {
+    letter-spacing: .00625em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #202124;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.looking-box-right i {
+    color: darkgray;
+}
+
+
+/*=====================OTP=ACCOUNT=START===================*/
+
+.otp-verify-area {
+    width: 100%;
+    height: 100vh;
+    background-color: #D6EAF8 ;
+}
+
+.otp-account-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    border: 2px solid #eeeff1;
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+}
+
+.main-account-top-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-btn-1,
+.main-btn-2 {
+    width: 50%;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main-account-top-btn .btn-active {
+    background-color: #f8f8f8;
+    border: 1px solid #e1e3e6;
+}
+
+.main-account-top-header {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.main-account-top-header h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 500;
+}
+
+.main-account-top-header small {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
+
+.otp-account-area {
+    padding: 0 20px;
+}
+
+.otp-account-input input {
+    margin-right: 10px;
+}
+
+.otp-account-area h3 {
+    font-size: 19px;
+    /* color: #000; */
+    font-weight: 500;
+}
+
+.otp-account-resend {
+    text-align: center;
+}
+
+.otp-account-resend h3 {
+    font-size: 18px;
+}
+
+.otp-account-btn .btn {
+    width: 90%;
+    background-color: #263a85;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.otp-account-btn-back {
+    padding-bottom: 100px !important;
+}
+
+.otp-account-btn-back .btn {
+    width: 90%;
+    padding: 10px 0;
+    border: 2px solid #dadce0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/*=====================OTP=ACCOUNT=END===================*/
+
+
+/* =====================edit-profile-box-container========================== */
+
+.left-logo-area-box {
+    margin: 10px 5%;
+    background-color: #f8f8f8;
+    padding: 5px 20px;
+}
+
+.left-logo-area img {
+    height: 40px;
+}
+
+.right-logo-area img {
+    width: 40px;
+    height: 40px;
+}
+
+.personal-conatiner {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    height: auto;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.border-btm {
+    border-bottom: 1px solid #dadce0;
+}
+
+.basic-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.basic-left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.basic-right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.photo-row .photo-left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.photo-left-mar {
+    margin-left: 166px;
+}
+
+.photo-row .photo-left h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.photo-row .photo-left .round-div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: darkblue;
+}
+
+.photo-row .photo-right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.photo-row .photo-right h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.photo-row .photo-left-margin {
+    margin-left: 154px;
+}
+
+.photo-row .photo-left-margin-round {
+    margin-right: 30px;
+}
+
+
+/* =============================name-row============================ */
+
+.name-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.name-row .name-left h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name-row .name-left-marging {
+    margin-left: 163px;
+}
+
+
+/* ================================birdt-row============================= */
+
+.birdt-row {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.birdt-row h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.birdt-row .bart-date {
+    margin-left: 137px;
+}
+
+
+/* =========================GENDER====================== */
+
+.gender-row {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.gender-row h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.gender-row .gender {
+    margin-left: 150px;
+}
+
+
+/* ===================================ORGANIZATION==================== */
+
+.organation-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.organation-row .organation-left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.organation-left-mar {
+    margin-left: 166px;
+}
+
+.organation .organation-left h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.organation-row .organation-left .round-div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: darkblue;
+}
+
+.organation-row .organation-right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.organation-row .organation-left h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.organation-row .organation-left-margin {
+    margin-left: 49px;
+}
+
+.organation-row .organation-left-margin-round {
+    margin-right: 30px;
+}
+
+.organation-row .organation-right h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* =====================================CONTACT=INFO=STRT================================== */
+
+.contact-info-conatiner {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    height: auto;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.contact-info-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.contact-left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contact-right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* ===========================EMAIL=START=============== */
+
+.email-row {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.email-row h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.email-row .email {
+    margin-left: 143px;
+}
+
+
+/* ===========================PHONE=START=============== */
+
+.phone-row {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.phone-row h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.phone-row .phone {
+    margin-left: 143px;
+}
+
+
+/* =====================================CONTACT=INFO=END================================== */

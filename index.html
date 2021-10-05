@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- =======CSS=LINK========= -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- =====================LOGIN=AND=REGISTER=FORM=START============= -->
+    <div class="container-fluid h-100" id="login-and-register-form">
+        <div class="row justify-content-center text-center">
+            <div class="lg-nd-rer-form rounded">
+                <div class="lg-nd-rer-form-btn-box" id="all_btn">
+                    <a id="active-css" href="#" class="lg-nd-rer-btn" onclick="login()">Login</a>
+                    <a href="#" id="active-css1" class="lg-nd-rer-btn" onclick="register()">Register</a>
+                </div>
+                <!-- ============HEADING=START===== -->
+                <div class="login-and-register-heading" id="heading1">
+                    <h1>Login</h1>
+                    <p>continue to edexa customer portal</p>
+                </div>
+                <!-- ============HEADING=END===== -->
+                <!-- ==================LOG=IN=FORM=START========== -->
+                <form action="#" method="post" class="form-form" id="login">
+                    <div class="form-element-all mb-2 position-relative">
+                        <input type="email" class="input-field" placeholder="Email" required>
+                        <span class="position-absolute social-icon"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="form-element-all position-relative">
+                        <input type="Password" class="input-field" placeholder="Password" required>
+                        <span class="position-absolute social-icon"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <div class="form-element-all d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                            <label class="form-check-label " for="disabledFieldsetCheck">
+                                              Remember me
+                                            </label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <div class="form-element-all">
+                        <a href="#" class="btn btn-lg light-blue">Login</a>
+                    </div>
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                    </div>
+                    <div class="form-element-all">
+                        <a href="#" class="btn btn-lg white-btn"><img src="assets/images/icons8-google.svg">Login With Google</a>
+                    </div>
+                    <div class="form-element-all my-2">
+                        <a href="#" class="btn btn-lg white-btn" onclick="otp_send()">Login With OTP</a>
+                    </div>
+                    <div class="form-element-all text-center my-2">
+                        <p style="color: #dadce0;">Don't Have an account?<a href="#">Sign up</a></p>
+                    </div>
+                </form>
+                <!-- ==================LOG=IN=FORM=END========== -->
+                <!-- =====================REGISTER=FORM=STERT========== -->
+                <form action="#" method="post" class="form-form" id="register" style="display: none;">
+                    <!-- ============HEADING=START===== -->
+                    <div class="login-and-register-heading" id="heading2">
+                        <h1>Register</h1>
+                        <p>continue to edexa customer portal</p>
+                    </div>
+                    <!-- ============HEADING=END===== -->
+                    <div class="form-element-all mb-2 position-relative">
+                        <input type="email" class="input-field" placeholder="Email" required>
+                        <span class="position-absolute social-icon"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="form-element-all position-relative">
+                        <input type="Password" class="input-field" placeholder="Password" required>
+                        <span class="position-absolute social-icon"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <div class="form-element-all mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                            <label class="form-check-label text-capitalize" for="disabledFieldsetCheck">
+                              I agree to edexa <a href="#" class="fw-bold" style="color: #155EA7 ;">Terms of service</a>and <a href="#" class="fw-bold" style="color: #155EA7 ;">privacy policy</a> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-element-all">
+                        <a href="#" class="btn btn-lg light-blue">Login</a>
+                    </div>
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                    </div>
+                    <div class="form-element-all">
+                        <a href="#" class="btn btn-lg white-btn"><img src="assets/images/icons8-google.svg">Login With Google</a>
+                    </div>
+                    <div class="form-element-all text-center my-2">
+                        <p style="color: #dadce0;">Already have an account?<a href="#">Login here</a></p>
+                    </div>
+                </form>
+                <!-- ===================REGISTER=END============== -->
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- =====================LOGIN=AND=REGISTER=FORM=END============= -->
+
+    <!-- =================================OTP=VERIFY=START========================= -->
+    <section class="otp-verify-area" id="otp_send" style="display: none;">
+        <div class="row justify-content-center align-items-center">
+            <div class="otp-account-container">
+                <div class="main-account-top-header">
+                    <h2>Login</h2>
+                    <small>OTP Verification</small>
+                </div>
+                <div class="otp-account-area mt-3">
+                    <h3>Enter the OTP sent to +1234567898</h3>
+                    <div class="otp-account-input d-flex">
+                        <input type="text" class="form-control" maxlength="1" />
+                        <input type="text" class="form-control " maxlength="1" />
+                        <input type="text" class="form-control " maxlength="1" />
+                        <input type="text" class="form-control " maxlength="1" />
+                        <input type="text" class="form-control " maxlength="1" />
+                        <input type="text" class="form-control " maxlength="1" />
+                    </div>
+                </div>
+                <div class="otp-account-resend my-3">
+                    <h3>Didn't Your receive any code?<a href="#">Resend OTP</a></h3>
+                </div>
+                <div class="otp-account-btn m-auto text-center">
+                    <button class="btn text-white" type="button" id="my_account">Verfiy and Proceed</button>
+                </div>
+                <div class="otp-account-btn-back mb-3 mt-3 m-auto text-center">
+                    <button class="btn btn-light" type="button" id="back">Back</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================================OTP=VERIFY=END========================= -->
+    <!-- =================================MY=ACCOUNT=START========================= -->
+    <div class="my-account py-5" id="myaccount_details" style="display: none;">
+        <div class="container">
+            <!-- <div class="my-account-top-logo">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" class="brand">
+                </div>
+                <div class="user-logo">
+                    <img src="images/user.jpg" alt="" class="user-round">
+                </div>
+            </div> -->
+            <h2>My Account</h2>
+            <div class="row-1">
+                <div class="account-det">
+
+                    <div class="round-head text-center">
+                        <h2>D</h2>
+                    </div>
+                    <div class="section-heading text-center mt-lg-3">
+                        <h2>Welcome, to Dinesh Rajpurohit</h2>
+                        <p>Manage your info, privacy and security to make Google work better for you.<a href="">Find more</a></p>
+                    </div>
+                    <!-- ===============FIRST=ROW=========== -->
+                    <div class="row-account">
+                        <!-- ================ROW=BOX=1============ -->
+                        <div class="div-left mb-3">
+                            <div class="content-box">
+                                <div class="left-box">
+                                    <h2>privacy &</h2>
+                                    <h2>personalistion</h2>
+                                    <p>See the data in your Google Account and choose what activity is saved, to personalise your Google experience</p>
+                                </div>
+                                <div class="right-box">
+                                    <img src="assets/images/img-1.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="magae">
+                                <h2><a href="#" id="edit_info">manage Your data and privacy</a></h2>
+                            </div>
+                        </div>
+                        <!-- ================ROW=BOX=1=END=========== -->
+                        <!-- ================ROW=BOX=2============ -->
+                        <div class="div-right mb-3">
+                            <div class="content-box">
+                                <div class="left-box">
+                                    <h2>privacy &</h2>
+                                    <h2>personalistion</h2>
+                                    <p>See the data in your Google Account and choose what activity is saved, to personalise your Google experience</p>
+                                </div>
+                                <div class="right-box">
+                                    <img src="assets/images/img-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="magae">
+                                <h2><a href="#" onclick="">manage Your data and privacy</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ===============FIRST=ROW=end========== -->
+                    <!-- ===============second=ROW=========== -->
+                    <div class="row-account mt-lg-3">
+                        <!-- ================ROW=BOX=1============ -->
+                        <div class="div-left mb-3">
+                            <div class="content-box">
+                                <div class="left-box">
+                                    <h2>privacy &</h2>
+                                    <h2>personalistion</h2>
+                                    <p>See the data in your Google Account and choose what activity is saved, to personalise your Google experience</p>
+                                </div>
+                                <div class="right-box">
+                                    <img src="assets/images/img-3.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="magae">
+                                <h2><a href="#">manage Storage</a></h2>
+                            </div>
+                        </div>
+                        <!-- ================ROW=BOX=1=END=========== -->
+                        <!-- ================ROW=BOX=2============ -->
+                        <div class="div-right mb-3">
+                            <div class="content-box">
+                                <div class="left-box">
+                                    <h2>privacy &</h2>
+                                    <h2>personalistion</h2>
+                                    <p>See the data in your Google Account and choose what activity is saved, to personalise your Google experience</p>
+                                </div>
+                                <div class="right-box">
+                                    <img src="assets/images/img-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="magae">
+                                <h2><a href="#">get started</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==============SECOND=ROW=END======== -->
+                    <div class="looking-box">
+                        <div class="subtitle mb-4">
+                            <h2>Looking for something else?</h2>
+                        </div>
+                        <div class="looking-box-row mb-4">
+                            <div class="looking-box-left">
+                                <a href="#"><i class="fas fa-search"></i>Search google Account</a>
+                            </div>
+                            <div class="looking-box-right">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="looking-box-row mb-4">
+                            <div class="looking-box-left">
+                                <a href="#"><img src="images/qus.png" alt=""></i>Search google Account</a>
+                            </div>
+                            <div class="looking-box-right">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="looking-box-row">
+                            <div class="looking-box-left">
+                                <a href="#"><img src="images/mass.png" alt=""> Search google Account</a>
+                            </div>
+                            <div class="looking-box-right">
+                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================================MY=ACCOUNT=END========================= -->
+    <!-- =================================EDIT=PROFILE=STSRAT========================= -->
+    <section class="container-fluid py-5" id="personal_info" style="display: none;">
+        <div class="row justify-content-between left-logo-area-box align-items-center">
+            <div class="col-md-6">
+                <div class="left-logo-area">
+                    <img src="assets/images/logo.png" alt="logo" height="30px" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-logo-area text-end">
+                    <img src="assets/images/user.jpg" alt="logo" class="rounded-circle">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-7">
+                <h1 style="font-size: 36px; font-weight: bold;">Personal info</h1>
+                <p>basic info, like your name and photo,that you can use on google servie</p>
+            </div>
+        </div>
+        <div class="personal-conatiner">
+            <!-- =============BASIC=DETAILS=START============= -->
+            <div class="basic-row border-btm">
+                <div class="basic-left">
+                    <h3>Basic Info</h3>
+                    <small>Some Info May Be Visble To Other People Using Google Service <a href="#" class="navy-blue">learn more</a></small>
+                </div>
+                <div class="basic-right">
+                    <a href="#" class="navy-blue fw-bold">Edit Basic Info</a>
+                </div>
+            </div>
+            <!-- =============BASIC=DETAILS=END============= -->
+            <!-- =============PHOTO=DETAILS=START============= -->
+            <div class="photo-row border-btm align-items-center">
+                <div class="photo-left">
+                    <div class="d-flex align-items-center">
+                        <h3>PHOTO</h3>
+                        <div class="d-flex align-items-center photo-left-margin">
+                            <div class="round-div photo-left-margin-round"></div>
+                            <a href="#" class="text-end navy-blue">change photo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-right">
+                    <h3 style="color: darkgray;">logo should be in 150 x 150 pixel required</h3>
+                </div>
+            </div>
+            <!-- =============PHOTO=DETAILS=END============= -->
+            <!-- =============NAME=DETAILS=START============= -->
+            <div class="name-row border-btm align-items-center">
+                <div class="name-left">
+                    <div class="d-flex align-items-center">
+                        <h3>NAME</h3>
+                        <div class="d-flex align-items-center name-left-marging">
+                            <h3 class="text-end">ARJUN MAKWNA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-right">
+                    <a href="#"><i class="fas fa-arrow-right" style="color: darkgray;"></i></a>
+                </div>
+            </div>
+            <!-- =============NAME=DETAILS=END============= -->
+            <!-- =============BIRTDAY=DETAILS=START============= -->
+            <div class="birdt-row border-btm align-items-center">
+                <h3>BIRHTDAY</h3>
+                <h3 class="bart-date"> March 28, 1994</h3>
+            </div>
+            <!-- =============BIRTDAY=DETAILS=END============= -->
+            <!-- =============GENDER=DETAILS=START============= -->
+            <div class="gender-row border-btm align-items-center">
+                <h3>GENDER</h3>
+                <h3 class="gender">male</h3>
+            </div>
+            <!-- =============GENDER=DETAILS=END============= -->
+            <!-- =============ORGANIZTATION=DETAILS=START============= -->
+            <div class="organation-row border-btm align-items-center">
+                <div class="organation-left">
+                    <div class="d-flex align-items-center orgainiztion-xsize">
+                        <h3>ORGANIZTATIONLOGO</h3>
+                        <div class="d-flex align-items-center organation-left-margin">
+                            <div class="round-div organation-left-margin-round orgainiztion-xsize-margin"></div>
+                            <a href="#" class="text-end navy-blue">change photo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="organation-right">
+                    <h3 style="color: darkgray;">logo should be in 150 x 150 pixel required</h3>
+                </div>
+            </div>
+            <!-- =============ORGANIZTATION=DETAILS=END============= -->
+        </div>
+        <!-- ==============================CONTACT=INFO=STRAT=================== -->
+        <div class="contact-info-conatiner my-5">
+            <!-- ===================CONTACT=DETAILS=START============ -->
+            <div class="contact-info-row border-btm">
+                <div class="contact-left">
+                    <h3>contact info</h3>
+                    <small>you can see and can change your contact info</small>
+                </div>
+                <div class="contact-right">
+                    <a href="#" class="navy-blue fw-bold">Edit Basic Info</a>
+                </div>
+            </div>
+            <!-- ===================CONTACT=DETAILS=END============ -->
+            <!-- ===================EMAIL=DETAILS=START============ -->
+            <div class="email-row border-btm align-items-center">
+                <h3>EMAIL</h3>
+                <h3 class="email">a.makwana@edexa.team</h3>
+            </div>
+            <!-- ===================EMAIL=DETAILS=END============ -->
+            <!-- ===================EMAIL=DETAILS=START============ -->
+            <div class="phone-row border-btm align-items-center">
+                <h3>PHONE</h3>
+                <h3 class="phone">0881425536</h3>
+            </div>
+            <!-- ===================EMAIL=DETAILS=END============ -->
+        </div>
+        <!-- ==============================CONTACT=INFO=END=================== -->
+    </section>
+    <!-- =================================EDIT=PROFILE=END========================= -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</body>
+
+</html>
